@@ -1,7 +1,6 @@
 @font-face {
   font-family: apple;
-  src: url('./sf-pro-regular.woff2') format('woff2'),
-      url('./sf-pro-regular.woff'); 
+  src: url('./sf-pro-text_regular.woff2');
 }
 
 *{
@@ -19,13 +18,13 @@ html, body{
   height: 40px;
   width: 100%;
   background-color: rgb(43, 42, 42);
+  font-family: apple;
   color: white;
 }
 
 #nav h4{
   font-size: 16px;
   font-weight: 300;
-  font-family: apple;
 }
 
 #nav {
@@ -55,11 +54,14 @@ html, body{
 #center h1{
   font-size: 40px;
   font-weight: 600;
+  font-family: apple;
+  padding-bottom: 10px;
 }
 #center h5{
   font-size: 18px;
   font-weight: 300;
   padding-bottom: 20px;
+  font-family: apple;
 }
 
 #center #links{
@@ -72,4 +74,15 @@ html, body{
   padding: 10px 30px;
   border-radius: 50px;
   background-color: royalblue;
+  cursor: pointer;
+  color: white;
+  font-family: apple;
+}
+
+#links #buybtn{
+  background-color: transparent;
+  border: 1px solid royalblue;
+  color: royalblue;
+  cursor: pointer;
+  font-family: apple;
 }
