@@ -1,5 +1,5 @@
 @font-face {
-  font-family: apple;
+  font-family: apple-font;
   src: url('./sf-pro-text_regular.woff2');
 }
 
@@ -18,14 +18,10 @@ html, body{
   height: 40px;
   width: 100%;
   background-color: rgb(43, 42, 42);
-  font-family: apple;
+  font-family: apple-font;
   color: white;
 }
 
-#nav h4{
-  font-size: 16px;
-  font-weight: 300;
-}
 
 #nav {
   display: flex;
@@ -36,15 +32,20 @@ html, body{
   padding: 20px;
   gap: 20px;
   font-weight: 300;
-  font-family: apple;
+  font-family: apple-font;
 }
 
+#nav .nav-link{
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+}
 
 #center{
-  
-  height: 89%;
+  height: 88.8vh;
   width: 100%;
-  padding: 50px;
+  padding: 3rem;
   color: white;
   text-align: center;
   background-image: url(https://www.apple.com/v/home/ch/images/heroes/iphone-17-pro/hero_iphone_17_pro__bknyzxfk2agi_large_2x.jpg);
@@ -53,37 +54,49 @@ html, body{
 }
 
 #center h1{
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 600;
-  font-family: apple;
+  font-family: apple-font;
   padding-bottom: 10px;
 }
 #center h5{
   font-size: 18px;
   font-weight: 300;
   padding-bottom: 20px;
-  font-family: apple;
+  font-family: apple-font;
 }
 
 #center #links{
   display: flex;
   justify-content: center;
-  gap: 20px;
-}
-#links button{
-  border: none;
-  padding: 10px 30px;
-  border-radius: 50px;
-  background-color: royalblue;
-  cursor: pointer;
-  color: white;
-  font-family: apple;
+  gap: 1.25rem;
 }
 
-#links #buybtn{
+#links button{
+  border: none;
+  padding: .625rem 1.875rem;
+  border-radius: 50px;
+  background-color: royalblue;
+  font-size: 1rem;
+  color: white;
+  font-family: apple-font;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#links button#buybtn{
   background-color: transparent;
   border: 1px solid royalblue;
   color: royalblue;
+  font-family: apple-font;
+}
+
+#links button:hover{
+  background-color: rgba(0, 0, 139, 0.96);
   cursor: pointer;
-  font-family: apple;
+}
+
+#links button#buybtn:hover {
+  background-color: royalblue;
+  color: white;
+  cursor: pointer;
 }
