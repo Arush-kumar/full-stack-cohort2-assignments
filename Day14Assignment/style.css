@@ -22,6 +22,9 @@ html, body{
   color: white;
 }
 
+#nav i{
+  cursor: pointer;
+}
 
 #nav {
   display: flex;
