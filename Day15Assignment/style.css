@@ -82,5 +82,6 @@ html, body {
 
 #card button:hover {
   background-color: rgb(255, 140, 0);
+  border: 1px solid rgba(0, 0, 0, 0.797);;
   transition: 0.3s;
 }
