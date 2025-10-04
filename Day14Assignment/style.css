@@ -83,6 +83,7 @@ html, body{
   font-size: 1rem;
   color: white;
   font-family: apple-font;
+  cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -91,15 +92,14 @@ html, body{
   border: 1px solid royalblue;
   color: royalblue;
   font-family: apple-font;
+  cursor: pointer;
 }
 
 #links button:hover{
   background-color: rgba(0, 0, 139, 0.96);
-  cursor: pointer;
 }
 
 #links button#buybtn:hover {
   background-color: royalblue;
   color: white;
-  cursor: pointer;
 }
