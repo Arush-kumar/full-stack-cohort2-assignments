@@ -17,10 +17,16 @@ html, body {
   padding: 20px;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
-}
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  }
+
+  .main::-webkit-scrollbar {
+    display: none;
+  }
 
 .card {
+  flex-shrink: 0;
   height: 350px;
   width: 300px;
   background-color: aquamarine;
