@@ -60,6 +60,13 @@ html, body {
   justify-content: space-between;
 }
 
+.title i{
+  background-color: aliceblue;
+  color: palevioletred;
+  padding: 5px;
+  border-radius: 10px;
+}
+
 .bottom p{
   font-weight: 100;
   font-size: 12px;
