@@ -10,5 +10,146 @@ html, body {
   color: #c0c0c0;
 }
 
+main {
+  height: calc(100vh - 20px);
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 25vh 1fr;
+  grid-template-areas: "header"
+                        "section"
+                        "figure"
+                        ;
+  background-color: #554d4d;
+  padding: 10px;
+  grid-gap: 10px;
+}
 
+header {
+  grid-area: header;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+section {
+  grid-area: section;
+  background-color: #925757;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+figure {
+  grid-area: figure;
+  background-color: #8d6880;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.center-div-data {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25vh 1fr;
+  grid-template-areas: "div1 div1"
+                        "div2 div3"
+                    ;
+  background-color: #554d4d;
+  padding: 10px;
+  grid-gap: 10px;
+}
+
+.div1 {
+  grid-area: div1;
+  background-color: rgb(103, 86, 79);
+}
+
+.div2 {
+  grid-area: div2;
+  background-color: rgb(75, 99, 91);
+}
+
+.div3 {
+  grid-area: div3;
+  background-color: rgb(103, 86, 79);
+}
+
+.div4 {
+  grid-area: div4;
+  background-color: rgb(75, 99, 91);
+}
+
+.expertise-section {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 15% 1fr 1fr;
+  grid-template-areas: "expertise-div1 expertise-div1 expertise-div2 expertise-div2"
+                        "expertise-div3 expertise-div4 expertise-div5 expertise-div6"
+                        "expertise-div7 expertise-div8 expertise-div9 expertise-div10"
+                    ;
+  background-color: #554d4d;
+  padding: 15px;
+  grid-gap: 20px;
+  border-radius: 10px;
+} 
+
+.expertise-div1 {
+  grid-area: expertise-div1;
+  background-color: rgb(65, 72, 94);
+  border-radius: 10px;
+}
+.expertise-div2 {
+  grid-area: expertise-div2;
+  background-color: rgb(87, 109, 77);
+  border-radius: 10px;
+}
+.expertise-div3 {
+  grid-area: expertise-div3;
+  background-color: rgb(90, 86, 63);
+  border-radius: 10px;
+}
+.expertise-div4 {
+  grid-area: expertise-div4;
+  background-color: rgb(53, 80, 88);
+  border-radius: 10px;
+}
+.expertise-div5 {
+  grid-area: expertise-div5;
+  background-color: rgb(64, 44, 44);
+  border-radius: 10px;
+}
+.expertise-div6 {
+  grid-area: expertise-div6;
+  background-color: rgb(54, 52, 35);
+  border-radius: 10px;
+}
+.expertise-div7 {
+  grid-area: expertise-div7;
+  background-color: rgb(65, 72, 94);
+  border-radius: 10px;
+}
+.expertise-div8 {
+  grid-area: expertise-div8;
+  background-color: rgb(97, 104, 75);
+  border-radius: 10px;
+}
+.expertise-div9 {
+  grid-area: expertise-div9;
+  background-color: rgb(99, 58, 88);
+  border-radius: 10px;
+}
+.expertise-div10 {
+  grid-area: expertise-div10;
+  background-color: rgb(62, 44, 53);
+  border-radius: 10px;
+} 
