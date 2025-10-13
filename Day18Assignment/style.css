@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: black; 
+  display: grid;
+  padding: 5px;
+  grid-template-columns: 50% 1fr 1fr;
+  grid-template-rows: 10% 1fr 1fr;
+  grid-template-areas: "header header header"
+                        "aside figure figure"
+                        "section div1 div2"
+  ;
+  grid-gap: 10px;
+  
+}
+
+
+header {
+  background-color: rgb(228, 228, 200);
+  grid-area: header;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .begin {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: black;
+}
+.navbar .middle {
+  display: flex;
+  gap: 20px;
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.navbar .middle a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .end {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .end button {
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+  justify-content: space-around;
+  gap: 8px;
+  background-color: transparent;
+  border: none;
+  color: rgb(23, 21, 21);
+  cursor: pointer;
+  font-weight: 400;
+}
+.navbar .end button:nth-child(2) {
+  padding: 5px 14px;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(18, 13, 18);
+  color: white;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.navbar .end button i {
+  background-color: rgb(122, 64, 180);
+  border-radius: 50%;
+}
+
+button .icon{
+  font-size: 18px;
+}
+
+
+/* aside section */
+aside {
+  width: 100%;
+  background-color: aqua;
+  grid-area: aside;
+  border-radius: 10px;
+}
+aside .main-content {
+  width: 400px;
+  display: flex;
+  flex-shrink: 1;
+  /* align-items: center; */
+  padding: 10px;
+}
+
+aside span img {
+  margin-top: 8px;
+  width: 70px;
+  height: 25px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+aside h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-left: 10px;
+}
+
+
+figure {
+  background-color: rgb(152, 38, 141);
+  grid-area: figure;
+  border-radius: 10px;
+}
+
+section {
+  background-color: blueviolet;
+  grid-area: section;
+  border-radius: 10px;
+}
+
+
+.div1 {
+  background-color: rgb(61, 52, 69);
+  grid-area: div1;
+  border-radius: 10px;
+}
+.div2 {
+  background-color: rgb(73, 114, 93);
+  grid-area: div2;
+  border-radius: 10px;
+}
+
+
+
+
+
+/* .child {
+  background-color: blueviolet;
+  border: 3px solid white;
+}
+
+#child1 {
+  grid-column: 1 / 4;
+} */
+
