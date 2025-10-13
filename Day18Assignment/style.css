@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -15,7 +14,7 @@ body {
 main {
   height: 100%;
   width: 100%;
-  background-color: black; 
+  /* background-color: black;  */
   display: grid;
   padding: 5px;
   grid-template-columns: 50% 1fr 1fr;
@@ -30,7 +29,6 @@ main {
 
 
 header {
-  background-color: rgb(228, 228, 200);
   grid-area: header;
   border-radius: 10px;
   padding: 10px 20px;
@@ -51,7 +49,7 @@ header {
   display: flex;
   gap: 20px;
   font-size: 0.7rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .navbar .middle a {
@@ -100,18 +98,26 @@ button .icon{
 /* aside section */
 aside {
   width: 100%;
-  background-color: aqua;
+  /* background-color: aqua; */
   grid-area: aside;
   border-radius: 10px;
 }
 aside .main-content {
   width: 400px;
   display: flex;
+  flex-direction: column;
   flex-shrink: 1;
-  /* align-items: center; */
-  padding: 10px;
+  padding: 20px 20px;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
 }
 
+aside .main-content .img-sec{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+}
 aside span img {
   margin-top: 8px;
   width: 70px;
@@ -120,35 +126,113 @@ aside span img {
   object-fit: cover;
 }
 
-aside h1 {
-  font-weight: 600;
-  font-size: 1.8rem;
-  margin-left: 10px;
+aside .main-content .img-sec h2 {
+  font-weight: 400;
 }
+
+aside .main-content h2 {
+  font-weight: 400;
+}
+
+.main-content .btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+aside .main-content button {
+  font-weight: 300;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 5px 18px;
+  color: black;
+  cursor: pointer;
+}
+
+button i {
+  color: black;
+}
+
 
 
 figure {
-  background-color: rgb(152, 38, 141);
   grid-area: figure;
+  background-image: url(https://images.unsplash.com/photo-1674111611614-699b8dc12cd8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIxfHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=600);
+
+  background-size: cover;
+  background-position: center;
   border-radius: 10px;
 }
+
+
 
 section {
-  background-color: blueviolet;
   grid-area: section;
+  /* background-color: blueviolet; */
   border-radius: 10px;
 }
 
+section .contact-btn-container {
+  display: flex;
+  gap: 20px;
+  padding-top: 5px;
+  align-items: center;
+}
+
+.bottom-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+} 
+
+.bottom-left p {
+  margin-top: 65px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.bottom-left .left-bottom-footer {
+  display: flex;
+  gap: 45px;
+}
+
+section .contact-btn-container .contact-btn {
+  display: flex;
+  gap: 5px;
+  padding: 5px 14px;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background-color: rgb(18, 13, 18);
+  color: white;
+  cursor: pointer;
+  font-weight: 300;
+}
+.contact-btn-container button i{
+  color: white;
+}
+.contact-btn-container a{
+  color: black;
+}
+
+
+/* Bottom right section */
 
 .div1 {
-  background-color: rgb(61, 52, 69);
   grid-area: div1;
   border-radius: 10px;
+  background-image: url(https://images.unsplash.com/photo-1690801635567-1297d3a2da4d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQ5fHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=600);
+  background-size: cover;
+  background-position: center;
 }
 .div2 {
-  background-color: rgb(73, 114, 93);
   grid-area: div2;
   border-radius: 10px;
+  background-image: url(https://images.unsplash.com/photo-1594876882696-16fb12eb78d0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM1fHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=600);
+  background-size: cover;
+  background-position: center;
 }
 
 
