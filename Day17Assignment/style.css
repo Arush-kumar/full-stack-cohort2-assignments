@@ -6,26 +6,27 @@
 
 html, body {
   font-family: Arial, sans-serif;
-  background-color: #1a1a1a;
+  background-color: #222;
   color: #c0c0c0;
 }
 
+/* Main Layout */
 main {
-  height: calc(100vh - 20px);
+  min-height: 100vh;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 10vh 25vh 1fr;
-  grid-template-areas: "header"
-                        "section"
-                        "figure"
-                        ;
+  grid-template-areas:
+  "header"
+  "section"
+  "figure";
   background-color: #554d4d;
-  padding: 10px;
-  grid-gap: 10px;
+  padding: 1rem;
+  grid-gap: 15px;
 }
 
 header {
@@ -49,22 +50,26 @@ figure {
   border-radius: 10px;
 }
 
+/* Center Section */
 .center-div-data {
-  height: 100vh;
+  min-height: 50vh;
   width: 100%;
   margin: 0 auto;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 25vh 1fr;
-  grid-template-areas: "div1 div1"
-                        "div2 div3"
-                    ;
-  background-color: #554d4d;
-  padding: 10px;
-  grid-gap: 10px;
+  grid-template-areas: 
+  "div1 div1"
+  "div2 div3";
+  padding: 1rem;
+  grid-gap: 1rem;
 }
 
+.div1, .div2, .div3 {
+  padding: 20px;
+  border-radius: 10px;
+}
 .div1 {
   grid-area: div1;
   background-color: rgb(103, 86, 79);
@@ -80,26 +85,21 @@ figure {
   background-color: rgb(103, 86, 79);
 }
 
-.div4 {
-  grid-area: div4;
-  background-color: rgb(75, 99, 91);
-}
-
 .expertise-section {
-  height: 100vh;
+  height: 60vh;
   width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 15% 1fr 1fr;
-  grid-template-areas: "expertise-div1 expertise-div1 expertise-div2 expertise-div2"
-                        "expertise-div3 expertise-div4 expertise-div5 expertise-div6"
-                        "expertise-div7 expertise-div8 expertise-div9 expertise-div10"
-                    ;
-  background-color: #554d4d;
+  grid-template-areas: 
+    "expertise-div1 expertise-div1 expertise-div2 expertise-div2"
+    "expertise-div3 expertise-div4 expertise-div5 expertise-div6"
+    "expertise-div7 expertise-div8 expertise-div9 expertise-div10";
   padding: 15px;
-  grid-gap: 20px;
+  grid-gap: 15px;
   border-radius: 10px;
 } 
 
@@ -107,6 +107,8 @@ figure {
   grid-area: expertise-div1;
   background-color: rgb(65, 72, 94);
   border-radius: 10px;
+  padding: 10px;
+  
 }
 .expertise-div2 {
   grid-area: expertise-div2;
