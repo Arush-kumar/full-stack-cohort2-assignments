@@ -33,7 +33,7 @@ main {
 
 header {
   grid-area: header;
-  padding: 10px 20px;
+  padding: 7px 20px;
 }
 
 .navbar {
@@ -43,9 +43,18 @@ header {
 }
 
 .navbar .begin {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 1.75rem;
   color: black;
+}
+
+.navbar i{
+  font-size: 20px;
+  color: rgb(80, 159, 196);
 }
 .navbar .middle {
   display: flex;
@@ -145,10 +154,11 @@ aside .main-content h2 {
 }
 
 aside .main-content button {
-  font-weight: 300;
+  font-weight: 400;
   background-color: transparent;
   border: 2px solid black;
   border-radius: 30px;
+  margin-top: 10px;
   padding: 5px 18px;
   color: black;
   cursor: pointer;
