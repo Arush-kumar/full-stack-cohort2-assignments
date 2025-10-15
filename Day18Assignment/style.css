@@ -4,18 +4,15 @@
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 html,
 body {
   height: 100%;
-  width: 100%;
+  width: 98vw;
 }
-
 main {
   height: calc(100vh - 80px);
   width: 100%;
   max-width: 1400px;
-  margin: 0 auto;
   box-sizing: border-box;
   display: grid;
   padding: 5px;
@@ -26,13 +23,16 @@ main {
                         "section div1 div2"
   ;
   grid-gap: 10px;
-  
 }
 
+.same_props {
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
 
 header {
   grid-area: header;
-  border-radius: 10px;
   padding: 10px 20px;
 }
 
@@ -50,7 +50,7 @@ header {
 .navbar .middle {
   display: flex;
   gap: 20px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 400;
 }
 
@@ -60,16 +60,20 @@ header {
 }
 
 .navbar .end {
-  width: 160px;
   display: flex;
+  gap: 15px;
   justify-content: space-between;
+}
+
+.end-btn-section {
+  position: relative;
+  left: 20px;
 }
 
 .navbar .end button {
   display: flex;
   align-items: center;
-  justify-items: flex-end;
-  justify-content: space-around;
+  justify-content: flex-end;
   gap: 8px;
   background-color: transparent;
   border: none;
@@ -100,18 +104,16 @@ button .icon{
 /* aside section */
 aside {
   width: 100%;
-  /* background-color: aqua; */
+  // background-color: aquamarine;
   grid-area: aside;
-  border-radius: 10px;
 }
 aside .main-content {
-  width: 30rem;
   display: flex;
   flex-direction: column;
   flex-shrink: 1;
   padding: 20px 20px;
-  font-size: 1.5rem;
-  line-height: 2.4rem;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
 }
 
 aside .main-content .img-sec{
@@ -121,9 +123,9 @@ aside .main-content .img-sec{
   gap: 17px;
 }
 aside span img {
-  margin-top: 8px;
-  width: 70px;
-  height: 25px;
+  margin-top: 14px;
+  width: 75px;
+  height: 35px;
   border-radius: 30px;
   object-fit: cover;
 }
@@ -156,23 +158,14 @@ button i {
   color: black;
 }
 
-
-
 figure {
   grid-area: figure;
   background-image: url(https://images.unsplash.com/photo-1674111611614-699b8dc12cd8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIxfHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=600);
-
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
 }
-
-
 
 section {
   grid-area: section;
   /* background-color: blueviolet; */
-  border-radius: 10px;
 }
 
 section .contact-btn-container {
@@ -190,7 +183,7 @@ section .contact-btn-container {
 } 
 
 .bottom-left p {
-  margin-top: 65px;
+  margin-top: 55px;
   font-size: 12px;
   font-weight: 700;
 }
@@ -219,22 +212,13 @@ section .contact-btn-container .contact-btn {
   color: black;
 }
 
-
 /* Bottom right section */
-
 .div1 {
   grid-area: div1;
-  border-radius: 10px;
   background-image: url(https://images.unsplash.com/photo-1690801635567-1297d3a2da4d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQ5fHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=600);
-  background-size: cover;
-  background-position: center;
 }
+
 .div2 {
   grid-area: div2;
-  border-radius: 10px;
   background-image: url(https://images.unsplash.com/photo-1594876882696-16fb12eb78d0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM1fHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=600);
-  background-size: cover;
-  background-position: center;
 }
-
-
