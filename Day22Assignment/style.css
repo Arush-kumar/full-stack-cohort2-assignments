@@ -20,26 +20,58 @@ body {
 main {
   width: 100%;
   display: flex;
-  justify-content: center;
-  padding: 1rem;
+  flex-direction: column;
 }
-main .view1 {
+main section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 1rem;
+  padding: 0.8rem;
 }
-main .view1 .top {
-  width: 100%;
+main section .top {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-main .view1 .top img {
+main section .top img {
   border-radius: 0.7rem;
 }
-main .view1 .top .bottom {
-  width: 100%;
+main section .bottom {
+  background-color: rgb(49, 49, 49);
   display: flex;
-  background-color: rgb(59, 25, 25);
+  flex-direction: column;
+  gap: 1.2rem;
+  border-radius: 0.7rem;
+  color: aliceblue;
+  padding: 1rem;
+}
+main section .bottom h1 {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+main section .bottom p {
+  opacity: 0.5;
+  line-height: 1.4;
+  font-weight: 100;
+}
+main section .bottom .btn {
+  display: flex;
+  gap: 1rem;
+}
+main section .bottom .btn button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  background-color: transparent;
+  color: aliceblue;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+main section .bottom .btn i {
+  background-color: rgba(50, 50, 50, 0.688);
+  padding: 0.5rem;
+  border-radius: 50%;
+  outline: 1px solid rgba(91, 90, 90, 0.688);
 }/*# sourceMappingURL=style.css.map */
