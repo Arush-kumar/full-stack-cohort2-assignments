@@ -25,50 +25,49 @@ main {
   flex-direction: column;
   gap: 0rem;
 }
-main section {
+main section.view1 {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   padding: 0.8rem;
 }
-main section .top {
+main section.view1 .top {
   width: 100%;
 }
-main section .top img {
+main section.view1 .top img {
   width: 100%;
   border-radius: 0.7rem;
 }
-main section .bottom {
+main section.view1 .bottom {
   width: 100%;
   background-color: rgb(49, 49, 49);
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  justify-content: center;
+  gap: 3rem;
   border-radius: 0.7rem;
   padding: 1.5rem;
 }
-main section .bottom .text {
+main section.view1 .bottom .text {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 1.5rem;
 }
-main section .bottom .text h1 {
+main section.view1 .bottom .text h1 {
   text-transform: uppercase;
   font-size: 2.5rem;
   font-weight: 300;
 }
-main section .bottom .text p {
+main section.view1 .bottom .text p {
   opacity: 0.5;
   line-height: 1.4;
   font-weight: 300;
 }
-main section .bottom .text .btn {
+main section.view1 .bottom .text .btn {
   display: flex;
   gap: 1rem;
 }
-main section .bottom .text button {
+main section.view1 .bottom .text button {
   width: -moz-fit-content;
   width: fit-content;
   border: none;
@@ -78,9 +77,38 @@ main section .bottom .text button {
   text-transform: uppercase;
   font-weight: 500;
 }
-main section .bottom .text i {
+main section.view1 .bottom .text i {
   background-color: rgba(50, 50, 50, 0.688);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   padding: 0.5rem;
   border-radius: 50%;
   outline: 1px solid rgba(91, 90, 90, 0.688);
+}
+
+@media (min-width: 900px) {
+  main {
+    flex-direction: row;
+  }
+  main section.view1 {
+    flex-direction: row;
+    padding: 1rem 3.5rem;
+  }
+  main section.view1 .top, main section.view1 .bottom {
+    width: 50%;
+  }
+  main section.view1 .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main section.view1 .bottom .text {
+    gap: 1.5rem;
+  }
+  main section.view1 .bottom .text h1 {
+    font-size: 3rem;
+  }
+  main section.view1 .bottom .text p {
+    width: 60%;
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
