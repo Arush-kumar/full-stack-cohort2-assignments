@@ -1,0 +1,177 @@
+# Simpale scss
+  section.philosophy-section, section.vision-section {
+    width: 100%;
+    @include flex-column(0.8rem);
+    padding: 0.8rem;
+
+    .philosophy-top {
+      width: 100%;
+
+      img {
+        width: 100%;
+        border-radius: 0.7rem;
+      }
+    }
+
+    .philosophy-bottom>p{
+      text-transform: uppercase;
+    }
+
+    .philosophy-bottom {
+      width: 100%;
+      background-color: #1e1e1e;
+      @include flex-column(3rem);
+      border-radius: 0.7rem;
+      padding: 1.5rem;
+
+      .main-text {
+        @include flex-column(1.5rem);
+
+        h2 {
+          text-transform: uppercase;
+          font-size: 2.5rem;
+          font-weight: 300;
+          line-height: 1.2;
+        }
+
+        p {
+          opacity: 0.5;
+          line-height: 1.4;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+
+
+  # use mixin 
+  //mixin for philosophy & vision section 
+
+// Create Mixin
+@mixin philosophy-section-style {
+  width: 100%;
+  @include flex-column(0.8rem);
+  padding: 0.8rem;
+
+  .philosophy-top {
+    width: 100%;
+
+    img {
+      width: 100%;
+      border-radius: 0.7rem;
+    }
+  }
+
+  .philosophy-bottom > p {
+    text-transform: uppercase;
+  }
+
+  .philosophy-bottom {
+    width: 100%;
+    background-color: #1e1e1e;
+    @include flex-column(3rem);
+    border-radius: 0.7rem;
+    padding: 1.5rem;
+
+    .main-text {
+      @include flex-column(1.5rem);
+
+      h2 {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+      }
+
+      p {
+        opacity: 0.5;
+        line-height: 1.4;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+// Mixin Usage
+section.philosophy-section,
+section.vision-section {
+  @include philosophy-section-style;
+}
+
+
+@media (min-width: 900px) {
+
+  
+  // section.philosophy-section{
+  //     flex-direction: row-reverse;
+  //     padding: 1rem 1.2rem;
+
+  //     .philosophy-top,
+  //     .philosophy-bottom {
+  //       width: 50%;
+  //     }
+
+  //     .philosophy-bottom {
+  //       gap: 7rem;
+  //       justify-content: space-between;
+  //       padding: 2.5rem 3rem;
+
+  //       .main-text {
+  //         gap: 1rem;
+
+  //         h1 {
+  //           font-size: 3.5rem;
+  //         }
+
+  //         .paragraph {
+  //           @include flex-column(2rem);
+  //           flex-direction: row;
+  //           font-size: 1.1rem;
+  //         }
+  //       }
+  //     }
+  //   }
+
+
+  # Create mixin for above codebase
+  @mixin philosophy-vision-layout($flex-direction: row-reverse) {
+    flex-direction: $flex-direction;
+    padding: 1rem 1.2rem;
+
+    .philosophy-top,
+    .philosophy-bottom {
+      width: 50%;
+    }
+
+    .philosophy-bottom {
+      gap: 7rem;
+      justify-content: space-between;
+      padding: 2.5rem 3rem;
+
+      .main-text {
+        gap: 1rem;
+
+        h1 {
+          font-size: 3.5rem;
+        }
+
+        .paragraph {
+          @include flex-column(2rem);
+          flex-direction: row;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+    //use mixin for philosophy section
+section.philosophy-section {
+  @include philosophy-vision-layout; // Default row-reverse[web:1]
+}
+
+//use mixin for vision section
+section.vision-section {
+  @include philosophy-vision-layout(row); // Custom flex-direction[web:1]
+  }
+}
