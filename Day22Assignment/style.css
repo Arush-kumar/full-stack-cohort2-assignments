@@ -28,7 +28,12 @@ section {
   max-width: 1920px;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 main {
+  scroll-behavior: smooth;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -203,8 +208,342 @@ main section.team-section .team .team-btn i {
   cursor: pointer;
   text-align: center;
 }
+main section.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.card .card1 {
+  background-image: url(./assest/card1.webp);
+}
+main section.card .card2 {
+  background-image: url(./assest/card2.webp);
+}
+main section.card .card3 {
+  background-image: url(./assest/card3.webp);
+}
+main section.card .card1, main section.card .card2, main section.card .card3 {
+  border-radius: 0.8rem;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.2rem;
+}
+main section.card .card1 .icon, main section.card .card1 .bottom, main section.card .card2 .icon, main section.card .card2 .bottom, main section.card .card3 .icon, main section.card .card3 .bottom {
+  background-color: rgba(168, 154, 146, 0.6156862745);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid white;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+}
+main section.card .card1 .top, main section.card .card2 .top, main section.card .card3 .top {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.7rem;
+}
+main section.card .card1 .top .icon, main section.card .card2 .top .icon, main section.card .card3 .top .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.6rem;
+  background-color: rgba(82, 82, 82, 0);
+  border-radius: 50%;
+  color: white;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  cursor: pointer;
+}
+main section.card .card1 .top .icon i, main section.card .card2 .top .icon i, main section.card .card3 .top .icon i {
+  font-size: 1.5rem;
+}
+main section.card .card1 .bottom, main section.card .card2 .bottom, main section.card .card3 .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1rem;
+}
+main section.card .card1 .bottom p, main section.card .card2 .bottom p, main section.card .card3 .bottom p {
+  color: rgba(255, 255, 255, 0.833);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 100;
+  letter-spacing: 0.057rem;
+}
+main section.card .card1 .bottom h2, main section.card .card2 .bottom h2, main section.card .card3 .bottom h2 {
+  color: rgba(255, 255, 255, 0.908);
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0.088rem;
+}
+main section.join-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 0.5rem 1rem;
+}
+main section.join-section .join-top {
+  width: 100%;
+}
+main section.join-section .join-top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main section.join-section .join-bottom {
+  width: 100%;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.7rem;
+}
+main section.join-section .join-bottom .top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-transform: uppercase;
+}
+main section.join-section .join-bottom .top p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: rgba(169, 168, 168, 0.9411764706);
+}
+main section.join-section .join-bottom .top h3 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+main section.join-section .join-bottom .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.7rem;
+  text-align: center;
+}
+main section.join-section .join-bottom .bottom i {
+  font-size: 1.3rem;
+  border: 1px solid #525252;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: rgba(169, 168, 168, 0.9411764706);
+}
+main section.join-section .join-bottom .bottom button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  background-color: transparent;
+  color: rgba(169, 168, 168, 0.9411764706);
+  cursor: pointer;
+}
+main section.contact-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 0.5rem 1rem;
+}
+main section.contact-section .contact {
+  width: 100%;
+  width: 100%;
+  background-color: #CEBD63;
+  color: #121212;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 1.5rem;
+  border-radius: 0.7rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+main section.contact-section .contact .top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main section.contact-section .contact p {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+main section.contact-section .contact h3 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+main section.contact-section .contact .contact-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.2rem 3rem;
+  background-color: #121212;
+  color: rgba(237, 234, 234, 0.9411764706);
+  text-align: center;
+  border-radius: 0.5rem;
+}
+main section.contact-section .contact .contact-btn button {
+  border: none;
+  background-color: transparent;
+  color: rgba(237, 234, 234, 0.9411764706);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.078rem;
+  font-size: 1.02rem;
+  word-spacing: 0.3rem;
+}
+main section.contact-section .contact .contact-btn i.btn-arrow {
+  font-size: 1.5rem;
+}
+main section.footer-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+main section.footer-section .section1,
+main section.footer-section .section2,
+main section.footer-section .section3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main section.footer-section .section1 {
+  background-color: #1E1E1E;
+  padding: 2rem;
+  gap: 12rem;
+}
+main section.footer-section .section1 .top h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 200;
+}
+main section.footer-section .section1 .bottom, main section.footer-section .section1 .icons {
+  display: flex;
+  gap: 0.7rem;
+  font-weight: 400;
+}
+main section.footer-section .section1 .bottom .icons, main section.footer-section .section1 .icons .icons {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main section.footer-section .section1 .bottom .icons i, main section.footer-section .section1 .icons .icons i {
+  padding: 0.6rem;
+  background-color: rgba(82, 82, 82, 0);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  cursor: pointer;
+  font-size: 1.3rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+main section.footer-section .section2 {
+  background-color: #1E1E1E;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+main section.footer-section .section2 .top, main section.footer-section .section2 .center, main section.footer-section .section2 .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1.7rem;
+  text-transform: uppercase;
+}
+main section.footer-section .section2 .top h3, main section.footer-section .section2 .center h3, main section.footer-section .section2 .bottom h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+main section.footer-section .section2 .top .nav-item-top, main section.footer-section .section2 .top .nav-item-center, main section.footer-section .section2 .top .nav-item-bottom, main section.footer-section .section2 .center .nav-item-top, main section.footer-section .section2 .center .nav-item-center, main section.footer-section .section2 .center .nav-item-bottom, main section.footer-section .section2 .bottom .nav-item-top, main section.footer-section .section2 .bottom .nav-item-center, main section.footer-section .section2 .bottom .nav-item-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.footer-section .section2 .top .nav-item-top a, main section.footer-section .section2 .top .nav-item-center a, main section.footer-section .section2 .top .nav-item-bottom a, main section.footer-section .section2 .center .nav-item-top a, main section.footer-section .section2 .center .nav-item-center a, main section.footer-section .section2 .center .nav-item-bottom a, main section.footer-section .section2 .bottom .nav-item-top a, main section.footer-section .section2 .bottom .nav-item-center a, main section.footer-section .section2 .bottom .nav-item-bottom a {
+  color: rgba(192, 190, 190, 0.914);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+main section.footer-section .section2 .top .nav-item-top button, main section.footer-section .section2 .top .nav-item-center button, main section.footer-section .section2 .top .nav-item-bottom button, main section.footer-section .section2 .center .nav-item-top button, main section.footer-section .section2 .center .nav-item-center button, main section.footer-section .section2 .center .nav-item-bottom button, main section.footer-section .section2 .bottom .nav-item-top button, main section.footer-section .section2 .bottom .nav-item-center button, main section.footer-section .section2 .bottom .nav-item-bottom button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1.5rem 2rem;
+  border: none;
+  outline: none;
+  background-color: #CEBD63;
+  color: black;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  letter-spacing: 0.066rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+main section.footer-section .section3 {
+  background-color: #1E1E1E;
+  padding: 1.5rem;
+}
+main section.footer-section .section3 .footer-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  align-items: center;
+}
+main section.footer-section .section3 .footer-bottom .footer-para-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  word-spacing: 2px;
+}
+main section.footer-section .section3 .footer-bottom .footer-para-top .top-line {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+main section.footer-section .section3 .footer-bottom .footer-para-top .top-line p, main section.footer-section .section3 .footer-bottom .footer-para-top .top-line a {
+  font-size: 1.2rem;
+  letter-spacing: 0.044rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.885);
+}
+main section.footer-section .section3 .footer-bottom .footer-icon-bottom {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-weight: 400;
+}
+main section.footer-section .section3 .footer-bottom .footer-icon-bottom p, main section.footer-section .section3 .footer-bottom .footer-icon-bottom i {
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
 
 @media (min-width: 900px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   main section.hero-section {
     flex-direction: row;
     padding: 1rem 1.2rem;
@@ -296,5 +635,86 @@ main section.team-section .team .team-btn i {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+  }
+  main section.card {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main section.card .bottom p {
+    font-size: 1rem;
+  }
+  main section.card .bottom h2 {
+    font-size: 1.2rem;
+  }
+  main section.join-section {
+    flex-direction: row;
+  }
+  main section.join-section .join-bottom {
+    padding: 3rem;
+  }
+  main section.contact-section {
+    flex-direction: row;
+  }
+  main section.contact-section .contact {
+    padding: 3rem;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  main section.contact-section .contact .top {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  main section.contact-section .contact .top p {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  main section.contact-section .contact .top h3 {
+    width: 90%;
+    font-size: 4.2rem;
+    font-weight: 500;
+  }
+  main section.contact-section .contact .contact-btn {
+    background-color: black;
+    width: 300px;
+    padding: 0.9rem 2rem;
+  }
+  main section.footer-section {
+    display: grid;
+    margin-bottom: 0.7rem;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 1fr 22%;
+    grid-gap: 0.7rem;
+    grid-template-areas: "section1 section2" "section1 section3";
+  }
+  main section.footer-section .section1 {
+    grid-area: section1;
+    justify-content: space-between;
+    padding: 3rem 2.5rem;
+  }
+  main section.footer-section .section2 {
+    padding: 2.5rem 1rem;
+    grid-area: section2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main section.footer-section .section2 .top .nav-item-btn button {
+    padding: 1rem 1rem;
+  }
+  main section.footer-section .section3 {
+    grid-area: section3;
+    justify-content: center;
+  }
+  main section.footer-section .section3 .footer-bottom {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main section.footer-section .section3 .footer-bottom .footer-para-top {
+    width: 30rem;
+    flex-direction: row;
+  }
+  main section.footer-section .section3 .footer-bottom .footer-icon-bottom {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */
