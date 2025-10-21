@@ -510,7 +510,7 @@ main section.footer-section .section3 .footer-bottom {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 3.5rem;
+  gap: 2rem;
   align-items: center;
 }
 main section.footer-section .section3 .footer-bottom .footer-para-top {
@@ -538,13 +538,10 @@ main section.footer-section .section3 .footer-bottom .footer-icon-bottom {
   gap: 0.7rem;
   font-weight: 400;
 }
-main section.footer-section .section3 .footer-bottom .footer-icon-bottom p, main section.footer-section .section3 .footer-bottom .footer-icon-bottom i {
+main section.footer-section .section3 .footer-bottom .footer-icon-bottom a, main section.footer-section .section3 .footer-bottom .footer-icon-bottom i {
   color: white;
   cursor: pointer;
   font-size: 1.2rem;
-  text-decoration: none;
-}
-main section.footer-section .section3 .footer-bottom .footer-icon-bottom .to-top {
   text-decoration: none;
 }
 
@@ -689,8 +686,8 @@ main section.footer-section .section3 .footer-bottom .footer-icon-bottom .to-top
     padding: 0.9rem 2rem;
   }
   main section.footer-section {
+    padding-bottom: 2rem;
     display: grid;
-    margin-bottom: 1rem;
     grid-template-columns: 20% 1fr;
     grid-template-rows: 1fr 22%;
     grid-gap: 0.7rem;
