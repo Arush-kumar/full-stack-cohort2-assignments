@@ -131,13 +131,20 @@ main section.nums-section .num4 {
   align-items: center;
   justify-content: center;
 }
+main section.philosophy-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main section.vision-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
 main section.philosophy-section,
 main section.vision-section {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  padding: 0.8rem;
+  padding: 0.5rem 0.7rem;
 }
 main section.philosophy-section .philosophy-top,
 main section.vision-section .philosophy-top {
@@ -414,7 +421,7 @@ main section.footer-section {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto 1fr auto;
   grid-gap: 1rem;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 main section.footer-section .section1,
 main section.footer-section .section2,
@@ -537,6 +544,9 @@ main section.footer-section .section3 .footer-bottom .footer-icon-bottom p, main
   font-size: 1.2rem;
   text-decoration: none;
 }
+main section.footer-section .section3 .footer-bottom .footer-icon-bottom .to-top {
+  text-decoration: none;
+}
 
 @media (min-width: 900px) {
   main {
@@ -574,7 +584,7 @@ main section.footer-section .section3 .footer-bottom .footer-icon-bottom p, main
   }
   main section.philosophy-section {
     flex-direction: row-reverse;
-    padding: 1rem 1.2rem;
+    padding: 0.5rem 1.2rem;
   }
   main section.philosophy-section .philosophy-top,
   main section.philosophy-section .philosophy-bottom {
@@ -600,7 +610,7 @@ main section.footer-section .section3 .footer-bottom .footer-icon-bottom p, main
   }
   main section.vision-section {
     flex-direction: row;
-    padding: 1rem 1.2rem;
+    padding: 0.5rem 1.2rem;
   }
   main section.vision-section .philosophy-top,
   main section.vision-section .philosophy-bottom {
@@ -680,7 +690,7 @@ main section.footer-section .section3 .footer-bottom .footer-icon-bottom p, main
   }
   main section.footer-section {
     display: grid;
-    margin-bottom: 0.7rem;
+    margin-bottom: 1rem;
     grid-template-columns: 20% 1fr;
     grid-template-rows: 1fr 22%;
     grid-gap: 0.7rem;
