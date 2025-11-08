@@ -1,0 +1,82 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+html{
+  color: white;
+  font-size: clamp(14px, 1.2vw, 18px);
+}
+
+
+body {
+  background-color: #262626;
+}
+
+@mixin flex-column($gap: 0rem) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+// section {
+//   max-width: 1920px;
+// }
+
+// main section start here
+main {
+
+  width: 100%;
+  .hero-section {
+    height: 200px;
+    width: 100%;
+
+    header{
+      width: 100%;
+      padding: 0.5rem;
+      background-image: linear-gradient(to right,rgb(83, 54, 230), #7944F3);
+      h2{
+        padding: 0.5rem;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: white;
+      }
+    }
+
+    .container{
+      @include flex-column(1.5rem);
+      width: 100%;
+      padding: 0.7rem;
+      background-color: aquamarine;
+
+      .top{
+        width: 100%;
+        padding: 0.5rem;
+        img{
+          width: 100%;
+        }
+      }
+
+      .bottom {
+        width: 100%;
+        padding: 1.5rem;
+        h2{
+          text-align: center;
+          font-size: 3rem;
+          font-weight: 700;
+          color: black;
+          line-height: 1.1;
+        }
+      }
+    }
+  }
+}
+// main section end
