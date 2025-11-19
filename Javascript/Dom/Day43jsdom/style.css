@@ -1,0 +1,48 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+html{
+  background-color: black;
+  color: aliceblue;
+}
+
+
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 80px;
+  background-color: goldenrod;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+/* .box {
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+  background-color: blueviolet;
+} */
+
+.btn {
+  background-color: rgba(99, 39, 39, 0.942);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 25px;
+  color: aliceblue;
+}
