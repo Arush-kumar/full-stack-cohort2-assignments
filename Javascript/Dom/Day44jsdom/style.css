@@ -37,3 +37,8 @@ button {
 button:active {
   scale: 0.98;
 }
+
+h1 {
+  font-size: 20px;
+  font-family: monospace;
+}
