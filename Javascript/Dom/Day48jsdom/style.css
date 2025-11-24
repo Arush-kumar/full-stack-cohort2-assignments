@@ -16,15 +16,16 @@ html {
 
 body {
   cursor: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
 }
 
-main {
-  height: 100%;
-  width: 100%;
-}
-
-main img {
-  position: fixed;
-  height: 50px;
-  transform: translate(-50%, -50%);
+h1 {
+  fownt-size: 100px;
+  background-color: #333;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-family: monospace;
 }

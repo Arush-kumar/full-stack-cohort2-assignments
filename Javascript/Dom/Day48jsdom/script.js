@@ -1,10 +1,8 @@
-var main = document.querySelector("main")
-var cursor = document.querySelector("#cursor")
+var h1 = document.querySelector("h1")
+var body = document.body
 
-
-main.addEventListener('mousemove', function(dets){
+body.addEventListener('keydown', function(dets){
     
-  cursor.style.left = dets.x + "px"
-  cursor.style.top = dets.y + "px"
+  h1.innerHTML = dets.code
 
 })
