@@ -1,7 +1,11 @@
-var allElems = document.querySelectorAll(".elem");
+var allBtns = document.querySelectorAll("button");
 
-allElems.forEach(function(elem){
-  elem.childNodes[3].addEventListener("click", function(){
-    console.log('hello');
+allBtns.forEach(function(elem){
+  elem.addEventListener("click", function(){
+    if(elem.innerHTML == "Add Freiend"){
+      elem.innerHTML = "Remove"
+    }else{
+      elem.innerHTML = "Add Freiend"
+    }
   })
 })
