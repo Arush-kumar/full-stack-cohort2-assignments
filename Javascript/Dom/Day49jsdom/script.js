@@ -1,3 +1,4 @@
+//querySelectorAll to selection for all buttons
 var allBtns = document.querySelectorAll("button");
 
 allBtns.forEach(function(elem){
