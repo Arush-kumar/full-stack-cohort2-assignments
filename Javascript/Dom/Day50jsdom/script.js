@@ -5,7 +5,7 @@ const reels = [
     isLiked: false,
     commentCount: 150,
     caption: "Enjoying the sunset!",
-    video: "https://www.pexels.com/download/video/32338574/",
+    video: "./reels/video1.mp4",
     userprofile: "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg",
     shareCount: 80,
     isFollowed: true
@@ -16,7 +16,7 @@ const reels = [
     isLiked: true,
     commentCount: 320,
     caption: "Morning vibes ✨",
-    video: "https://www.pexels.com/download/video/29102001/",
+    video: "./reels/video2.mp4",
     userprofile: "https://images.pexels.com/photos/18047455/pexels-photo-18047455.jpeg",
     shareCount: 210,
     isFollowed: false
@@ -27,7 +27,7 @@ const reels = [
     isLiked: false,
     commentCount: 430,
     caption: "Exploring the mountains 🏔️",
-    video: "./reels/video1.mp4",
+    video: "./reels/video3.mp4",
     userprofile: "https://images.pexels.com/photos/31750447/pexels-photo-31750447.jpeg",
     shareCount: 300,
     isFollowed: true
@@ -49,7 +49,7 @@ const reels = [
     isLiked: true,
     commentCount: 200,
     caption: "My new favorite beat 🎶",
-    video: "./reels/video1.mp4",
+    video: "./reels/video5.mp4",
     userprofile: "https://images.pexels.com/photos/6996168/pexels-photo-6996168.jpeg",
     shareCount: 150,
     isFollowed: true
@@ -60,7 +60,7 @@ const reels = [
     isLiked: false,
     commentCount: 70,
     caption: "Trying out the latest gadget 🔥",
-    video: "./reels/video2.mp4",
+    video: "./reels/video6.mp4",
     userprofile: "https://images.pexels.com/photos/8424940/pexels-photo-8424940.jpeg",
     shareCount: 40,
     isFollowed: false
@@ -71,7 +71,7 @@ const reels = [
     isLiked: true,
     commentCount: 510,
     caption: "Leg day workout! 💪",
-    video: "./reels/video3.mp4",
+    video: "./reels/video7.mp4",
     userprofile: "https://images.pexels.com/photos/25232982/pexels-photo-25232982.jpeg",
     shareCount: 330,
     isFollowed: true
@@ -82,7 +82,7 @@ const reels = [
     isLiked: false,
     commentCount: 95,
     caption: "New painting is here 🎨",
-    video: "./reels/video4.mp4",
+    video: "./reels/video8.mp4",
     userprofile: "https://images.pexels.com/photos/5998465/pexels-photo-5998465.jpeg",
     shareCount: 60,
     isFollowed: false
@@ -93,7 +93,7 @@ const reels = [
     isLiked: true,
     commentCount: 180,
     caption: "Debugging all night 💻",
-    video: "./reels/video1.mp4",
+    video: "./reels/video9.mp4",
     userprofile: "https://images.pexels.com/photos/7898464/pexels-photo-7898464.jpeg",
     shareCount: 120,
     isFollowed: true
@@ -104,7 +104,7 @@ const reels = [
     isLiked: false,
     commentCount: 270,
     caption: "Captured this beauty 🌿",
-    video: "./reels/video2.mp4",
+    video: "./reels/video10.mp4",
     userprofile: "https://images.pexels.com/photos/13869790/pexels-photo-13869790.jpeg",
     shareCount: 260,
     isFollowed: false
