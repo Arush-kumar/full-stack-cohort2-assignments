@@ -5,7 +5,7 @@ const reels = [
     isLiked: false,
     commentCount: 150,
     caption: "Enjoying the sunset!",
-    video: "./reels/video1.mp4",
+    video: "https://www.pexels.com/download/video/32338574/",
     userprofile: "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg",
     shareCount: 80,
     isFollowed: true
@@ -16,7 +16,7 @@ const reels = [
     isLiked: true,
     commentCount: 320,
     caption: "Morning vibes ✨",
-    video: "./reels/video2.mp4",
+    video: "https://www.pexels.com/download/video/29102001/",
     userprofile: "https://images.pexels.com/photos/18047455/pexels-photo-18047455.jpeg",
     shareCount: 210,
     isFollowed: false
@@ -27,7 +27,7 @@ const reels = [
     isLiked: false,
     commentCount: 430,
     caption: "Exploring the mountains 🏔️",
-    video: "./reels/video3.mp4",
+    video: "./reels/video1.mp4",
     userprofile: "https://images.pexels.com/photos/31750447/pexels-photo-31750447.jpeg",
     shareCount: 300,
     isFollowed: true
