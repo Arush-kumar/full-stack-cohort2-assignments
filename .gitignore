@@ -1,0 +1,4 @@
+# Day50jsdom ke reels folder ki saari mp4 files ignore karo
+Javascript/Dom/Day50jsdom/reels/*.mp4
+
+*.mp4
