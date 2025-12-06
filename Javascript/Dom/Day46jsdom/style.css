@@ -32,6 +32,11 @@ main {
 
 }
 
+.card div {
+  position: relative;
+  overflow: hidden;
+}
+
 .card img {
   width: 100%;
   object-fit: cover;
@@ -48,9 +53,14 @@ main {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0) rotate(-60deg);
   transition: all cubic-bezier(.59,.78,.55,1.13) 0.4s;
   font-size: 80px;
-  color: red;
   opacity: 0;
+  
+  background-image: url(https://t4.ftcdn.net/jpg/06/55/50/69/360_F_655506911_1p13PsGKM93SuCePkLUcd75TW1Bzu4jg.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
