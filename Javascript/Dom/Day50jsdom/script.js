@@ -74,15 +74,15 @@ function addData() {
     sum = sum + `<div class="reel">
           <video autoplay loop ${elem.ismuted ? 'muted' : ''} src="${elem.video}"></video>
           <div class="mute" id=${idx}>
-          ${elem.ismuted?'<i class="ri-volume-mute-fill"></i>':'<i class="ri-volume-up-line"></i>'}
-      
+          ${elem.ismuted ? '<i class="ri-volume-mute-fill"></i>' : '<i class="ri-volume-up-line"></i>'}
+    
     </div>
           <div class="bottom">
             <div class="user">
               <img
                 src="${elem.userprofile}"
                 alt="">
-              <h4 ismuted:true>${elem.username}</h4>
+              <h4>${elem.username}</h4>
               <button id=${idx} class='follow'>${elem.isFollowed ? 'Unfollow' : 'Follow'}</button>
             </div>
             <h3>${elem.caption}</h3>
@@ -109,6 +109,7 @@ function addData() {
 
   allReels.innerHTML = sum
 }
+
 
 addData()
 
