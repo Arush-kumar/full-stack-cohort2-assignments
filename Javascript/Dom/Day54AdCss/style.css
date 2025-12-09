@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 300px;
+  width: 450px;
+  box-shadow: 0 0 50px rgba(163, 80, 80, 0.5);
+  text-shadow: 0/*x-asis*/ 0/*y-asis*/ 10px/*blur-radius*/ rgb(189, 31, 31)/*color*/;
+  /* background-color: conic-gradient(white, black); */
+
+  animation: bgColorChange 5s infinite forwards alternate;
+}
+
+@keyframes bgColorChange {
+  0% {
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  100% {
+    background-color: red;
+    border-radius: 40px;
+  }
+}
