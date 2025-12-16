@@ -54,7 +54,7 @@ body:has(.box:hover) .box:not(:hover){
   transform: scale(0.8);
 }
 
-/* agr parent div ke andr child div ke andr class blue hai to unka bgc change kar do  */
+/* :has parent selector */
 .balls:has(.blue){
   background-color: powderblue;
 }
