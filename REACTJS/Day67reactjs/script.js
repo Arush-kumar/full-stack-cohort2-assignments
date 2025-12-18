@@ -1,7 +1,5 @@
-const h1 = () => {
-  return React.createElement("h1", null, "Hello for react") 
-}
 
+import h1 from "./app.js"
 var root = ReactDOM.createRoot(document.querySelector("#container"))
 
 root.render(h1())
