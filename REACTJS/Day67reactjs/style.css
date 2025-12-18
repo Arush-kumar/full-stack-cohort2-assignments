@@ -32,3 +32,10 @@ body {
   width: 200px;
   background-color: yellowgreen;
 }
+
+.circle {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-color: rgb(80, 65, 26);
+}
