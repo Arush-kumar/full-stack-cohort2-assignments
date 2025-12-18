@@ -1,5 +1,5 @@
 
-import h1 from "./app.js"
+import box from "./app.js"
 var root = ReactDOM.createRoot(document.querySelector("#container"))
 
-root.render(h1())
+root.render(box())

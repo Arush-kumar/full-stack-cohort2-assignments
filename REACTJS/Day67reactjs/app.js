@@ -1,6 +1,6 @@
-const h1 = () => {
-  return React.createElement("h1", null, "Hello for React!") 
+const box = () => {
+  return React.createElement("div", { className: "box" }, "This is box") 
 }
 
 
-export default h1
+export default box
