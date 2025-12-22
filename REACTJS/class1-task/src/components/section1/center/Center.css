@@ -1,0 +1,112 @@
+.center {
+  height: 89vh;
+  width: 100%;
+  /* background-color: rgb(92, 71, 61); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center .center-container {
+  height: 84vh;
+  width: 93.2vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  padding-top: 4.5rem;
+  background-image: url(https://images.pexels.com/photos/2202685/pexels-photo-2202685.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 1.1rem;
+  overflow: hidden;
+}
+
+
+.center-container .main-headline h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.center-container .main-para p{
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.center-container .main-btn {
+  margin-top: 4px;
+}
+
+.center .foot-container {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 67px;
+}
+
+.center .foot-container .foot-left{
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+
+.para-div p{
+  color: white;
+  font-size: 0.5rem;
+  font-weight: 200;
+}
+
+.active {
+  background-color: rgba(198, 173, 222, 0.063);
+  border: 1px solid rgba(198, 173, 222, 0.788);
+  border-radius: 1.2rem;
+  padding: 4px;
+  color: rgba(0, 0, 0, 0.889);
+}
+
+.center .foot-container .foot-left .img-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.center .foot-container .foot-left .img-div img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+
+
+.center .foot-container .foot-right{
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+.center .foot-container .foot-right p{
+  color: white;
+  background-color: rgba(198, 173, 222, 0);
+  border: 1px solid rgba(198, 173, 222, 0);
+  padding: 5px 10px;
+  transition: all 0.3s linear;
+}
+.center .foot-container .foot-right p:hover{
+  background-color: rgba(198, 173, 222, 0.063);
+  border: 1px solid rgba(198, 173, 222, 0.98);
+  border-radius: 1.2rem;
+}

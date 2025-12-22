@@ -1,0 +1,33 @@
+.bottom-section2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom-section2 .b-top{
+  padding: 2rem 1rem;
+}
+
+.bottom-section2 .b-top h3{
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.bottom-section2 .b-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+.bottom-section2 .b-bottom,.b{
+  text-align: center;
+}
+.bottom-section2 .b-bottom h2{
+  font-size: 2rem;
+  font-weight: 400;
+}
+.bottom-section2 .b-bottom p{
+  font-size: 0.8rem;
+  font-weight: 300;
+}
