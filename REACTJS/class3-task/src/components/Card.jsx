@@ -1,11 +1,10 @@
 const Card = (props) => {
-  // console.log(props); // URL check karne ke liye
 
   return (
     <div className="card sm:flex-col sm:px-1 sm:mx-0 rounded-3xl flex flex-row justify-center h-fit items-center ">
       
       <div
-        className="group border-8 shadow-gray-500 h-[340px] w-[270px] bg-cover bg-center rounded-3xl flex justify-between flex-col pb-2 px-2 overflow-hidden"
+        className="group border-2 shadow-gray-500 h-[340px] w-[270px] bg-cover bg-center rounded-3xl flex justify-between flex-col pb-2 px-2 overflow-hidden"
         style={{ backgroundImage: `url(${props.profile})` }}
         >
 
@@ -31,10 +30,11 @@ const Card = (props) => {
           <div className="transform sm:translate-y-6 sm:opacity-0
           transition-all duration-500 ease-out group-hover:translate-0 group-hover:opacity-100">
             <h2 className="text-xl pb-3 font-bold text-amber-500">{props.fullname}</h2>
+            {/* Social Icons */}
             <div className="text-sm font-thin">
               <i className="border rounded-full text-amber-100 mx-2 p-[4px] ri-threads-line"></i>
               <i className="border rounded-full text-amber-100 mx-2 p-[4px] ri-instagram-line"></i>
-              <i className="border rounded-full text-amber-100 mx-2 p-[4px] ri-telegram-2-line"></i>
+              <i className="border rounded-full text-amber-100 mx-2 p-[4px]ri-telegram-2-line"></i>
             </div>
             <p className="text-xs text-gray-200 font-light pt-2">{props.description}</p>
           </div>
