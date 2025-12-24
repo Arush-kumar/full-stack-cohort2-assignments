@@ -9,7 +9,7 @@ const Card = (props) => {
         >
 
       {/* Top Bar Animate */}
-        <div className="group border-b border-amber-400 backdrop-blur-xs flex flex-row justify-between items-center text-xl font-bold text-white bg-black/50 w-full text-center py-2 px-4 mt-2 rounded-3xl  transform md:translate-y-6 md:opacity-0
+        <div className="group  border-t border-amber-400 backdrop-blur-xs flex flex-row justify-between items-center text-xl font-bold text-white bg-black/50 w-full text-center py-2 px-4 mt-2 rounded-3xl  transform md:translate-y-6 md:opacity-0
           transition-all duration-500 ease-out group-hover:translate-0 group-hover:opacity-100">  
           <img className="h-[30px] w-[30px] rounded-full border-gray-300 border object-cover" src={props.profile} alt="img" />
           
@@ -25,7 +25,7 @@ const Card = (props) => {
         </div>
 
         {/* Bottom Heros & Icon  */}
-        <div className="border-b border-amber-400 backdrop-blur-xs flex flex-col justify-between gap-6 text-xl font-bold text-white bg-black/50 w-full text-center py-3 px-4 rounded-3xl transform sm:translate-y-6 sm:opacity-0
+        <div className="border-b border-t border-amber-400 backdrop-blur-xs flex flex-col justify-between gap-6 text-xl font-bold text-white bg-black/50 w-full text-center py-3 px-4 rounded-3xl transform sm:translate-y-6 sm:opacity-0
           transition-all duration-500 ease-out group-hover:translate-0 group-hover:opacity-100">  
 
           <div className="transform sm:translate-y-6 sm:opacity-0
