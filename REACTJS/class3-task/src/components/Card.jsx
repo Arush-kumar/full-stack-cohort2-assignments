@@ -1,11 +1,11 @@
 const Card = (props) => {
-  console.log(props); // URL check karne ke liye
+  // console.log(props); // URL check karne ke liye
 
   return (
     <div className="card rounded-3xl flex flex-row justify-center h-fit items-center ">
       
       <div
-        className="group border-4 h-[340px] w-[270px] bg-cover bg-center rounded-2xl flex justify-between flex-col pb-2 px-2 overflow-hidden
+        className="group border-4 h-[340px] w-[270px] bg-cover bg-center rounded-3xl flex justify-between flex-col pb-2 px-2 overflow-hidden
         cursor-pointer"
         style={{ backgroundImage: `url(${props.profile})` }}
         >

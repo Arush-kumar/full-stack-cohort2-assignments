@@ -106,7 +106,7 @@ const users = [
 
   return (
     <div className='min-h-screen p-6 bg-neutral-900"'>
-      <div className='lg:px-10 md:px-12 sm:px-2
+      <div className='lg:px-10 md:px-12 sm:px-0 sm:flex sm:flex-col sm:gap-4 sm:items-center sm:justify-center
           grid
           gap-4
           justify-start
