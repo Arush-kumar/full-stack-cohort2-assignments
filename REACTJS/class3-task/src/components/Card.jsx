@@ -27,15 +27,19 @@ const Card = (props) => {
         {/* Bottom Heros & Icon  */}
         <div className="border-b border-amber-400 backdrop-blur-xs flex flex-col justify-between gap-6 text-xl font-bold text-white bg-black/50 w-full text-center py-3 px-4 rounded-3xl transform sm:translate-y-6 sm:opacity-0
           transition-all duration-500 ease-out group-hover:translate-0 group-hover:opacity-100">  
+
           <div className="transform sm:translate-y-6 sm:opacity-0
           transition-all duration-500 ease-out group-hover:translate-0 group-hover:opacity-100">
             <h2 className="text-xl pb-3 font-bold text-amber-500">{props.fullname}</h2>
             {/* Social Icons */}
+
             <div className="text-sm font-thin">
               <i className="border rounded-full text-amber-100 mx-2 p-[4px] ri-threads-line"></i>
               <i className="border rounded-full text-amber-100 mx-2 p-[4px] ri-instagram-line"></i>
-              <i className="border rounded-full text-amber-100 mx-2 p-[4px]ri-telegram-2-line"></i>
+            <i className="border rounded-full text-amber-100 mx-2 p-[4px] ri-telegram-2-line"></i>
+                      
             </div>
+
             <p className="text-xs text-gray-200 font-light pt-2">{props.description}</p>
           </div>
           <div className="font-thin flex flex-row justify-center items-center gap-2">
