@@ -1,14 +1,28 @@
-import Navbar from './components/Navbar'
+import Men from './components/Men'
+import Women from './components/Women'
 import './index.css'
 const App = () => {
 
-  const arr = ["Courses", "Bootcamp", "Classroom", "Profile"]
+  const user1 = {
+    name: 'Bixi',
+    age: 20,
+    gender: "Male"
+  }
+  const user2 = {
+    name: 'Shreya',
+    age: 19,
+    gender: "Female"
+  }
+  const user3 = {
+    name: 'Anirudhra',
+    age: 20,
+    gender: "Male"
+  }
   
 
   return (
-    <div className='h-screen w-full bg-black'>
-      <Navbar title="Sheryians" color='Powderblue' links = {arr}/>
-      <Navbar title="Apple" color='black' links = {["Apple", "IPhone", "IPad", "Store"]}/>
+    <div className='h-screen bg-black'>
+      {user2.gender === 'Male' ? <Men /> : <Women />}
     </div>
   )
 }
