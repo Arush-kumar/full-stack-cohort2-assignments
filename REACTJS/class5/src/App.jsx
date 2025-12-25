@@ -2,18 +2,18 @@ import { useState } from "react"
 
 const App = () => {
 
-  const [num, setNum] = useState(0)
+  const [user, setUser] = useState("Alen")
 
-  const inc = () => {
-    setNum(num + 1)
+  const User = () => {
+    setUser("Alex")
   }
   
   return (
     <div className='h-screen bg-black text-white'>
-      <h1 className="text-5xl">{num}</h1>
-      <button onClick={inc} 
+      <h1 className="text-5xl">{user}</h1>
+      <button onClick={User} 
       className="bg-amber-600 px-4 py-2  w-fit">
-          Increment  
+          Change User  
       </button>
 
     </div>
