@@ -3,10 +3,12 @@ import { useState } from "react"
 const App = () => {
 
 
-
   const [marks, setMarks] = useState([28, 91, 85, 80, 27])
+  const [graceGiven, setGraceGiven] = useState(false) // click karne par 1 baar hi chalega 
 
   function graceStudent(){
+
+    if(graceGiven) return // 1 baar click karne par grace milegi
 
     const newMarks = marks.map((elem)=>{
       if(elem>90) return elem
@@ -14,6 +16,7 @@ const App = () => {
     })
 
     setMarks(newMarks)
+    setGraceGiven(true)
   }
 
   
@@ -25,7 +28,7 @@ const App = () => {
       })}
 
       <button onClick={graceStudent}
-      className="rounded text-2xl bg-amber-600 px-4 py-2  w-fit"
+      className="active:scale-95 rounded text-2xl bg-amber-600 px-4 py-2  w-fit"
       >
           Give them grace  
       </button>
