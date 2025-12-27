@@ -1,9 +1,11 @@
+import { set } from "mongoose"
 import { useState } from "react"
 
 const App = () => {
 
 
   const [title, setTitle] = useState("")
+  const [email, setEmail] = useState("")
 
   const [allUsers, setAllUsers] = useState([])
 
@@ -12,11 +14,12 @@ const App = () => {
 
 
     const newAllUsers = [...allUsers]
-    newAllUsers.push(title)
+    newAllUsers.push(title, email)
     setAllUsers(newAllUsers)
-    console.log(newAllUsers);
+  
     
-    setTitle("")  
+    setTitle("") 
+    setEmail("") 
   }
 
   return (
@@ -38,6 +41,18 @@ const App = () => {
         setTitle(e.target.value)
       }}
       />
+      <input 
+      type="text"
+      placeholder="Enter Email"
+      required
+      value={email}
+
+      onChange={(e) => {
+
+        // console.log("hello");
+        setEmail(e.target.value)
+      }}
+      />
       
       <button>Submit</button>
       </form>
@@ -47,7 +62,7 @@ const App = () => {
         allUsers.map((elem, idx) => {
           return (
             <div key={idx}>
-              <h2>{elem}</h2>
+              <h2>{elem} {email}</h2>
             </div>
           )
         })
