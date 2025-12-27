@@ -13,10 +13,11 @@ const App = () => {
     e.preventDefault()
 
 
-    const newAllUsers = [...allUsers]
-    newAllUsers.push(title, email)
+    const newAllUsers = [...allUsers, ]
+    newAllUsers.push({title, email})
     setAllUsers(newAllUsers)
-  
+    console.log(newAllUsers);
+    
     
     setTitle("") 
     setEmail("") 
@@ -37,7 +38,6 @@ const App = () => {
 
       onChange={(e) => {
 
-        // console.log("hello");
         setTitle(e.target.value)
       }}
       />
@@ -49,7 +49,6 @@ const App = () => {
 
       onChange={(e) => {
 
-        // console.log("hello");
         setEmail(e.target.value)
       }}
       />
@@ -62,7 +61,8 @@ const App = () => {
         allUsers.map((elem, idx) => {
           return (
             <div key={idx}>
-              <h2>{elem} {email}</h2>
+              <h2>{elem.title}</h2>
+              <p>{elem.email}</p>
             </div>
           )
         })
