@@ -11,13 +11,8 @@ const App = () => {
 
   const submitHanderler = (e) => {
     e.preventDefault()
-
-
-    const newAllUsers = [...allUsers, ]
-    newAllUsers.push({title, email})
-    setAllUsers(newAllUsers)
-    console.log(newAllUsers);
     
+    setAllUsers([...allUsers, {title, email}])    
     
     setTitle("") 
     setEmail("") 
