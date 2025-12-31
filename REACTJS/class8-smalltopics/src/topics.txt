@@ -1,0 +1,48 @@
+localStorage.clear() => to clean localStorage
+localStorage.setItem("key", "value") => to add new item or overwrite existing ones
+localStorage.setItem("key") => to get  any item 
+localStorage.removeItem("key") => to remove any item 
+
+cookies =>  
+          accessToken => short time available
+          refreshToken => long time available 
+
+
+          localStorage always store data in string to getting data from localStorage got data have string.
+
+          shortly, I would to say it.
+          setItem => string
+          getItem => string
+
+          localStorage always store data in string if you add data in the form of object, to convert it in string. 
+
+          JSON.stringify : Array / Object => string
+
+          JSON.parse : string => Array / Object
+
+
+          on setItem time 
+          object to string   
+          JSON.stringify(object) => to convert array or object
+
+          use => localStorage.setItem("obj", JSON.stringify(obj)) => console.log => string
+
+          if u you use again same format, mean use real obj data than again change in obj/array 
+
+          how to do that
+          JSON.parse(obj)     => to convert string to obj/array
+
+
+          on getItem time 
+          object to string   
+          JSON.stringify(object)
+
+
+
+
+
+
+          data will store, when browser/tab close after close data will remove from sessionStorage
+
+          same goes with this one : session storage 
+          sessionStorage.setItem("key", "value")
