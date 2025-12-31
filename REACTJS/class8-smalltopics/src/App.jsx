@@ -29,6 +29,9 @@ const App = () => {
   const deleteHandler = (idx) => {
     const copyUsers = [...allUsers]
 
+    const conf = confirm("Are you really sure!, want to delete this user?")
+    if (!conf) return alert("Delete canceled")
+
     copyUsers.splice(idx, 1)
 
     setAllUsers(copyUsers)
