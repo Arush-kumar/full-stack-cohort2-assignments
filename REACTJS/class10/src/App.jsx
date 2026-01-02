@@ -1,14 +1,26 @@
-import axios from "axios"
+import { useEffect, useState } from "react"
+
 const App = () => {
 
-  const getData = async() => {
-    const data = await axios.get('https://jsonplaceholder.typicode.com/users')
-    console.log(data.data[0].name)
-    
-  }
+  const [count, setCount] = useState(0)
+  const [name, setName] = useState('')
+
+  useEffect(() => {
+    console.log('useEffect called')
+  },[name])
+
   return (
-    <div className="h-screen w-full bg-black text-white">
-      <button onClick={getData}>click</button>
+    <div className="bg-black h-screen text-white">
+      <input 
+      value={name}
+      onChange={(e) => setName(e.target.value)}
+      placeholder="Enter Your Name"
+      type="text" />
+
+      <h1>{count}</h1>
+      <button
+      onClick={()=>{setCount(count + 1)}}
+      >Increment</button>
     </div>
   )
 }
