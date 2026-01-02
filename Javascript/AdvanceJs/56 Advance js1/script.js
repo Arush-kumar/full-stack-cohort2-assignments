@@ -1,41 +1,18 @@
-class AalooChaat {
-  constructor(){
-    this.name = "Aaloo Chaat"
-    this.price = 100
-    this.oil = "5ml"
-    this.oilBrand = "Saffola"
-    this.masaale = ["dhania", "pudhina", "mirch"]
+class Kitaab{
+  constructor(name, author, price, color){
+    this.name = name;
+    this.author = author;
+    this.price = price;
+    this.color = color;
   }
 
-  pack(){
-    console.log("Aaloo Chaat is packed.");
-    
-  }
-  unpack(){
-    console.log("Aaloo Chaat is unpacked.");
-    
-  }
-}
-
-class ChholeChaat {
-  constructor(){
-    this.name = "Chhole Chaat"
-    this.price = 70
-    this.oil = "5ml"
-    this.oilBrand = "Saffola"
-    this.masaale = ["dhania", "pudhina", "mirch"]
-  }
-
-  pack(){
-    console.log("Chhole Chaat is packed.");
-    
-  }
-  unpack(){
-    console.log("Chhole Chaat is unpacked.");
-    
-  }
+  pannaPalto(){}
+  bookmarkLagao(){}
+  padhlo(){}
 }
 
 
-let ac1 = new AalooChaat();
-ac1.pack()
+
+let k1 = new Kitaab("Oswaal", "cs ug", 300, "white");
+let k2 = new Kitaab("Oswaal", "maths ug", 300, "white");
+let k3 = new Kitaab("Oswaal", "physics ug", 300, "white");
