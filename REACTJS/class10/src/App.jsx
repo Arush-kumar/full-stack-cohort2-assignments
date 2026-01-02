@@ -1,26 +1,20 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
+import axios from "axios"
 
 const App = () => {
 
-  const [count, setCount] = useState(0)
-  const [name, setName] = useState('')
+  const getData = async () => {
+    const response = await axios.get("https://pokeapi.co/api/v2/pokemon/")
+    console.log(response.data.results[0].name);
 
-  useEffect(() => {
-    console.log('useEffect called')
-  },[count])
+  }
 
+  useEffect(()=>{
+    getData()
+  },[])
   return (
-    <div className="bg-black h-screen text-white">
-      <input 
-      value={name}
-      onChange={(e) => setName(e.target.value)}
-      placeholder="Enter Your Name"
-      type="text" />
-
-      <h1>{count}</h1>
-      <button
-      onClick={()=>{setCount(count + 1)}}
-      >Increment</button>
+    <div>
+      
     </div>
   )
 }
