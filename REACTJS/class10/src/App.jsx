@@ -7,7 +7,7 @@ const App = () => {
 
   useEffect(() => {
     console.log('useEffect called')
-  },[name])
+  },[count])
 
   return (
     <div className="bg-black h-screen text-white">
