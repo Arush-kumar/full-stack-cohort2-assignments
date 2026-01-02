@@ -1,28 +1,41 @@
-class Remote{
-  constructor(product, brand, price){
-    this.product = product;
-    this.brand = brand;
-    this.price = price;
+class AalooChaat {
+  constructor(){
+    this.name = "Aaloo Chaat"
+    this.price = 100
+    this.oil = "5ml"
+    this.oilBrand = "Saffola"
+    this.masaale = ["dhania", "pudhina", "mirch"]
   }
-  powerOn(){
-    console.log(`power on ${this.product}`);
+
+  pack(){
+    console.log("Aaloo Chaat is packed.");
+    
   }
-  powerOff(){
-    console.log(`power off ${this.product}`)
+  unpack(){
+    console.log("Aaloo Chaat is unpacked.");
+    
   }
 }
 
-let r1 = new Remote("tv", "sony", 50000);
-let r2 = new Remote("lg", "lg", 4000);
+class ChholeChaat {
+  constructor(){
+    this.name = "Chhole Chaat"
+    this.price = 70
+    this.oil = "5ml"
+    this.oilBrand = "Saffola"
+    this.masaale = ["dhania", "pudhina", "mirch"]
+  }
 
-console.log(r1);
-console.log(r2);
+  pack(){
+    console.log("Chhole Chaat is packed.");
+    
+  }
+  unpack(){
+    console.log("Chhole Chaat is unpacked.");
+    
+  }
+}
 
 
-
-
-
-// class => blueprint of object
-//class => saancha
-
-// constructor hai automatic chalne wala funstion 
+let ac1 = new AalooChaat();
+ac1.pack()
