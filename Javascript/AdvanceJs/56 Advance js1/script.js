@@ -1,18 +1,17 @@
-class Kitaab{
-  constructor(name, author, price, color){
-    this.name = name;
-    this.author = author;
-    this.price = price;
-    this.color = color;
+class Human{
+  constructor(name, age){
+    this.name = "Arush";
+    this.age = 20;
+  }
+  breath(){
+    console.log("I am breathing");
   }
 
-  pannaPalto(){}
-  bookmarkLagao(){}
-  padhlo(){}
+  eat(){
+    console.log("I am eating");
+  }
 }
 
 
-
-let k1 = new Kitaab("Oswaal", "cs ug", 300, "white");
-let k2 = new Kitaab("Oswaal", "maths ug", 300, "white");
-let k3 = new Kitaab("Oswaal", "physics ug", 300, "white");
+let h1 = new Human(); // eske paas apna breath() and eat() func hoga 
+let h2 = new Human(); // eske paas apna breath() and eat() func hoga 
