@@ -3,15 +3,17 @@ class Human{
     this.name = "Arush";
     this.age = 20;
   }
-  breath(){
-    console.log("I am breathing");
-  }
-
-  eat(){
-    console.log("I am eating");
-  }
+  // here create function than to be the part of constructor function
 }
 
+//Human class ki Shared memory mei ye function add ho gaye hai
+Human.prototype.breath = function(){
+  console.log("I am breathing");
+}
 
-let h1 = new Human(); // eske paas apna breath() and eat() func hoga 
-let h2 = new Human(); // eske paas apna breath() and eat() func hoga 
+Human.prototype.eat = function(){
+  console.log("I am eating");
+}
+
+let h1 = new Human(); 
+let h2 = new Human(); 
