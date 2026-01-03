@@ -1,0 +1,16 @@
+this ek special keyword hota hai
+kyunki this ki value badal jati hai
+
+this like a relation 
+kiske respect me baat kar raha hai 
+
+
+global -> window
+function -> window
+
+ES5 function inside object -> object
+ES6 function inside object -> window 
+
+ES5 function inside ES5 function inside object -> window 
+ES6 function inside ES5 function inside object -> object 
+
