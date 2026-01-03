@@ -42,15 +42,27 @@
 // obj.fun();
 
 // Es6 inside Es5 inside object
+// let obj = {
+//   name: "Arush",
+//   age: 20,
+//   fun: function () {
+//     fun1 = () => {
+//       console.log(this);
+//     }
+//     fun1();
+//   },
+// }
+
+// obj.fun();
+
+
+
 let obj = {
-  name: "Arush",
-  age: 20,
-  fun: function () {
-    fun1 = () => {
-      console.log(this);
-    }
-    fun1();
-  },
+  name: "Arush"
 }
 
-obj.fun();
+function func(a, b, c){
+  console.log(this);
+}
+
+func.call(obj,1,2,3)

@@ -14,3 +14,6 @@ ES6 function inside object -> window
 ES5 function inside ES5 function inside object -> window 
 ES6 function inside ES5 function inside object -> object 
 
+
+call apply bind
+function mai this ki value window hoti hai, agr aap chahte ho ki vo window na ho koi aur object ho jaye tab ham use karte hai call apply bind ka
