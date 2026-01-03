@@ -62,7 +62,8 @@ let obj = {
 }
 
 function func(a, b, c){
-  console.log(this);
+  console.log(this,a, b, c);
 }
 
-func.apply(obj,[1,2,3])
+let newFunc = func.bind(obj,1,2,3)
+newFunc()
