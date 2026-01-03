@@ -3,7 +3,7 @@ class Human{
     this.name = "Arush";
     this.age = 20;
   }
-  // here create function than to be the part of constructor function
+  // here create method than to be the part of constructor function
 }
 
 
