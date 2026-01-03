@@ -65,4 +65,4 @@ function func(a, b, c){
   console.log(this);
 }
 
-func.call(obj,1,2,3)
+func.apply(obj,[1,2,3])
