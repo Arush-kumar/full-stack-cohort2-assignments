@@ -3,17 +3,19 @@ class Human{
     this.name = "Arush";
     this.age = 20;
   }
-  // here create method than to be the part of constructor function
+  // share memory use 
+  sleep() {
+    console.log("I am sleeping");
+  }
+  eat(){
+    console.log("I am eating");
+  }
+  work(){
+    console.log("I am working");
+  }
 }
 
 
-Human.prototype.breath = function(){
-  console.log("I am breathing");
-}
-
-Human.prototype.eat = function(){
-  console.log("I am eating");
-}
 
 let h1 = new Human(); 
 let h2 = new Human(); 
