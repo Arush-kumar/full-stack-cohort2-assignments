@@ -1,10 +1,12 @@
 
 const Sidebar = (props) => {
   console.log(props.links);
+
+  
   
   return (
     
-      <div className="left w-1/4 h-full p-2">
+      <div className="left w-1/4 h-full">
         <div className="leftSidebar h-full w-full rounded-xl backdrop-blur-sm bg-gray-600/30 border border-amber-100">
           <div className="flex gap-1 items-center justify-between px-3 py-4 text-sm text-white">
             <div className="flex w-full  gap-4">
@@ -16,6 +18,7 @@ const Sidebar = (props) => {
             <i className="ri-menu-fold-line"></i>
           </div>
 
+{/* side menu */}
           <div className="flex flex-col gap-2.5 px-4 pb-8">
             <div className="flex gap-2 text-sm font-thin text-white">
               <i className="ri-home-office-fill cursor-pointer"></i>

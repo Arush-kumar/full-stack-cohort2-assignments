@@ -6,7 +6,7 @@ class Human{
   // here create function than to be the part of constructor function
 }
 
-//Human class ki Shared memory mei ye function add ho gaye hai
+
 Human.prototype.breath = function(){
   console.log("I am breathing");
 }
