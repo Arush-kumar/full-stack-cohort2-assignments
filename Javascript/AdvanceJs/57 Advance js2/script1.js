@@ -56,6 +56,28 @@
 // obj.fun();
 
 
+// call apply bind
+// let obj = {
+//   name: "Arush"
+// }
+
+// function func(a, b, c){
+//   console.log(this,a, b, c);
+// }
+
+// func.call(obj,1,2,3)
+
+
+// let obj = {
+//   name: "Arush"
+// }
+
+// function func(a, b, c){
+//   console.log(this,a, b, c);
+// }
+
+// func.apply(obj, [1,2,3])
+
 
 let obj = {
   name: "Arush"
