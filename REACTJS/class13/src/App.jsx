@@ -1,15 +1,20 @@
-import axios from 'axios'
+import { useState } from "react"
+import Navbar from "./components/Navbar"
+
+
 const App = () => {
 
-  const getData = async () => {
-    const response = await axios.get('http://localhost:8000/data')
-    console.log(response.data.data[0].username);
+  const [theme, setTheme] = useState('light')
 
+  const changeTheme = (newTheme) => {
+    setTheme(newTheme)
+    
   }
 
   return (
     <div>
-      <button onClick={getData}>Click</button>
+      <h1>Theme is {theme}</h1>
+      <Navbar changeTheme={changeTheme}/>
     </div>
   )
 }
