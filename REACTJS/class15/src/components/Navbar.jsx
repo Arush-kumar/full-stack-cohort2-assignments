@@ -3,8 +3,6 @@ import { ThemeDataContext } from "../context/ThemeContext";
 
 const Navbar = () => {
   const [theme, setTheme] = useContext(ThemeDataContext);
-
-  // console.log(themeData);
   
   return (
     <div className="flex items-center justify-between">
