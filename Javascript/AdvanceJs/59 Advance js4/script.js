@@ -17,3 +17,12 @@ abcd(function (fn1) {
     });
   });
 });
+
+
+
+// function iceCreamLao(address, fn){
+//   // logic
+//   fn('ice cream');
+// }
+
+// githubSeDataLao('address', function(ice){})
