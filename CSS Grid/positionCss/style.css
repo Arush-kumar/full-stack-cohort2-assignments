@@ -1,0 +1,41 @@
+/* position: absolute, relative, fixed, sticky */ 
+/* => left, right, top, bottom, z-index */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#box1 {
+    height: 300px;
+    width: 300px;
+    background-color: red;
+}
+
+#box2 {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(17, 46, 15);
+}
+#box3 {
+    position: absolute;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(102, 125, 208);
+}
+#box4 {
+    /* position: absolute;
+    left: 20%; */
+    height: 40px;
+    width: 40px;
+    background-color: rgb(208, 194, 102);
+}

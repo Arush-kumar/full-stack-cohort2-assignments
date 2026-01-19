@@ -1,0 +1,30 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+/* Set local font */
+@font-face {
+  font-family: 'love_days';
+  src: url('LoveDays.ttf');
+}
+@font-face {
+  font-family: 'danger';
+  src: url('another_danger.otf');
+}
+@font-face {
+  font-family: 'nothing-font';
+  src: url('Ndot-55.otf');
+}
+
+body{
+  background-color: #191818;
+}
+
+h1{
+  font-family: 'love_days';
+  color: #747070;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 100;
+}
