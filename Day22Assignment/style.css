@@ -75,6 +75,7 @@ header.navbar {
 }
 
 /* Overlay Menu */
+/* mobile menu */
 .menu-overlay {
   position: fixed;
   inset: 0;
@@ -139,7 +140,9 @@ header.navbar {
   border-radius: 20px;
   font-size: 16px;
 }
+/* Overlay Menu end */
 
+/* main section */
 section {
   max-width: 1920px;
 }

@@ -1,24 +1,10 @@
-const openMenu = document.querySelector("#openMenu");
-const closeMenu = document.querySelector(".closeMenu");
-const menu = document.querySelector("#menu");
-
-openMenu.addEventListener("click", () => {
-  menu.classList.toggle("active");
-});
-
-// Menu open & close logic
 const menuBtn = document.querySelector(".menu-btn");
-const i = document.querySelector("button i");
+const menu = document.querySelector("#menu");
+const icon = document.querySelector(".ri-menu-line");
 
 menuBtn.addEventListener("click", () => {
-  let hamburgerIcon = "ri-menu-fill";
-  let closeIcon = "ri-close-fill";
+  menu.classList.toggle("active");
 
-  menuBtn.classList.toggle("active");
-
-  if (menuBtn.classList.contains("active")) {
-    i.classList.replace(hamburgerIcon, closeIcon);
-  } else {
-    i.classList.replace(closeIcon, hamburgerIcon);
-  }
+  // add class toggle if have menu class active
+  icon.className = menu.classList.contains('active') ? 'ri-close-large-line' : 'ri-menu-line';
 });
