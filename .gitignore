@@ -2,3 +2,14 @@
 Javascript/Dom/Day50jsdom/reels/*.mp4
 
 *.mp4
+
+node_modules
+
+*.svg
+*.png
+*.mp3
+*.mp4
+*.jpg
+*.jpeg
+
+*.local
