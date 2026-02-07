@@ -13,3 +13,7 @@ node_modules
 *.jpeg
 
 *.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
