@@ -72,23 +72,64 @@
 // })
 
 
-// Example
-function instagramSeDataLaao(username, cb){
 
-  setTimeout(() => {
-    cb({uniqueNum: 1212, username: "arush"})
-  }, 2000);
-}
 
-function metaSeDataLao(uniqueNum, cb){
-  setTimeout(() => {
-    cb(["img1", "img2", "img3"])
-  }, 4000);
-}
+// // Example
+// function instagramSeDataLaao(username, cb){
 
-instagramSeDataLaao("arushk", function(data){
-  metaSeDataLao(data.uniqueNum, function(images){
-    console.log(images);
+//   setTimeout(() => {
+//     cb({uniqueNum: 1212, username: "arush"})
+//   }, 2000);
+// }
+
+// function metaSeDataLao(uniqueNum, cb){
+//   setTimeout(() => {
+//     cb(["img1", "img2", "img3"])
+//   }, 4000);
+// }
+
+// instagramSeDataLaao("arushk", function(data){
+//   metaSeDataLao(data.uniqueNum, function(images){
+//     console.log(images);
+//   })
+// })
+
+
+
+// Exercise 3 — Intermediate (Callback dependency — thoda painful)
+
+// Task : Teen functions banao:
+
+// 1. `loginUser`
+//    - 1 second baad callback ko `user` object de
+// 2. `fetchPermissions`
+//    - `userId` lega
+//    - 1 second baad callback ko `permissions` array de
+// 3. `loadDashboard`
+//    - `permissions` lega
+//    - 1 second baad callback ko `"Dashboard loaded"` bole
+
+// Flow:
+// - Pehle `loginUser`
+// - Uske andar `fetchPermissions`
+// - Uske andar `loadDashboard`
+// - Final output console mein print ho
+
+// Goal:
+// - Callback nesting ko feel karna
+// - Yehi structure baad mein callback hell banta hai
+
+
+function loginUser(){}
+function fetchPermissions(){}
+function loadDashboard(){}
+
+
+loginUser("arush", function(userdata){
+  fetchPermissions(userdata.id, function(permissions){
+    loadDashboard(permissions, function(){
+      console.log("permission loaded");
+      
+    })
   })
 })
-
